@@ -16,6 +16,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_hero.mk \
     $(LOCAL_DIR)/cyanogen_heroc.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
+    $(LOCAL_DIR)/cyanogen_jordan.mk \
     $(LOCAL_DIR)/cyanogen_galaxysmtd.mk \
     $(LOCAL_DIR)/cyanogen_generic.mk \
     $(LOCAL_DIR)/cyanogen_glacier.mk \
@@ -42,6 +43,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_vibrantmtd.mk \
     $(LOCAL_DIR)/cyanogen_vision.mk \
     $(LOCAL_DIR)/cyanogen_vivo.mk \
+    $(LOCAL_DIR)/cyanogen_vivow.mk \
     $(LOCAL_DIR)/cyanogen_z71.mk \
     $(LOCAL_DIR)/cyanogen_zeppelin.mk \
     $(LOCAL_DIR)/cyanogen_zero.mk

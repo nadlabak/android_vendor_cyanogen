@@ -4,13 +4,13 @@
 # partition is too small
 #
 
-CACHESIZE=$(df -k /cache | tail -n1 | tr -s ' ' | cut -d ' ' -f2)
+#CACHESIZE=$(df -k /cache | tail -n1 | tr -s ' ' | cut -d ' ' -f2)
+CACHESIZE=0
 if [ $CACHESIZE -lt 20000 ]
 then
   mount -o bind /data/local/download /cache/download
 fi
 
-rm /cache/downloadfile*.apk >/dev/null 2>&1
 rm /cache/download/downloadfile*.apk >/dev/null 2>&1
 
 exit 0

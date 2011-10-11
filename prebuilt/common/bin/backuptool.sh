@@ -178,7 +178,7 @@ case "$1" in
            $file_list | while read FILE REPLACEMENT; do
               R=""
               [ -n "$REPLACEMENT" ] && R="$S/$REPLACEMENT"
-              restore_file $S/$FILE $R
+              restore_file $S/$FILE "$R"
            done
          done
          rm -rf $C

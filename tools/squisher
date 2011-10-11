@@ -85,7 +85,7 @@ cd $REPACK/ota/system/framework
 $OPTICHARGER framework-res.apk
 cd $REPACK/ota/system/app
 # Delete unwanted apps
-rm -f CMUpdateNotify.apk
+rm -f CMUpdateNotify.*
 rm -f RomManager.apk
 find ./ -name \*.apk | $XARGS $OPTICHARGER
 )

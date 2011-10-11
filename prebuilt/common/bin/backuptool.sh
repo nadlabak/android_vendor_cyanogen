@@ -47,7 +47,7 @@ app/GoogleCalendarSyncAdapter.apk
 app/GoogleContactsSyncAdapter.apk
 app/GoogleFeedback.apk
 app/GooglePartnerSetup.apk
-app/GoogleQuickSearchBox.apk app/QuickSearchBox.apk
+app/GoogleQuickSearchBox.apk app/QuickSearchBox.*
 app/GoogleServicesFramework.apk
 app/googlevoice.apk
 app/HtcCopyright.apk
@@ -63,7 +63,7 @@ app/NetworkLocation.apk
 app/OneTimeInitializer.apk
 app/PassionQuickOffice.apk
 app/Quickoffice.apk
-app/SetupWizard.apk app/Provision.apk
+app/SetupWizard.apk app/Provision.*
 app/soundback.apk
 app/Street.apk
 app/Talk.apk
@@ -135,7 +135,7 @@ restore_file() {
       cp -p $C/$FILE $1;
       if [ -n "$2" ];
       then
-         rm $2;
+         rm -f $2;
       fi
    fi
 }

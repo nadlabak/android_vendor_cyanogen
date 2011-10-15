@@ -84,10 +84,6 @@ echo
 cd $REPACK/ota/system/framework
 $OPTICHARGER framework-res.apk
 cd $REPACK/ota/system/app
-# Delete unwanted apps
-rm -f CMUpdateNotify.*
-rm -f CMWallpapers.*
-rm -f RomManager.apk
 find ./ -name \*.apk | $XARGS $OPTICHARGER
 )
 
@@ -127,13 +123,6 @@ $SED -i \
 	-e '/ro\.build\.type/s/eng/user/' \
 	$REPACK/ota/system/build.prop
 
-# Include prebuilt boot.img
-cp $ANDROID_BUILD_TOP/vendor/motorola/umts_sholes/proprietary/boot.img $REPACK/ota/
-
-# Rootfs stuff
-mkdir -p $REPACK/ota/system/etc/rootfs/sbin
-cp $OUT/root/ueventd.rc $REPACK/ota/system/etc/rootfs/
-cp $OUT/root/init $REPACK/ota/system/etc/rootfs/sbin/ueventd
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )

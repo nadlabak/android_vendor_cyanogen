@@ -6,6 +6,16 @@ $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 # Include GSM stuff
 #$(call inherit-product, vendor/cyanogen/products/gsm.mk)
+#
+# ^^ commented out, as we need dun type set in internet apns for the 3G Mobile Hotspot
+# to work, so we use our own separate apn list and include the rest of GSM stuff below
+#
+# it will go away once the native wifi tether will work,
+# (if the free time needed for it will be found in the future ;)
+
+# GSM SPN overrides list
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # SIM Toolkit
 PRODUCT_PACKAGES += \
@@ -26,7 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=SHOLS_U2_05.26.3 PRODUCT_NAME=umts_shol
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := Milestone
-PRODUCT_VERSION_DEVICE_SPECIFIC := .2
+PRODUCT_VERSION_DEVICE_SPECIFIC := .3
 -include vendor/cyanogen/products/common_versions.mk
 
 # PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-umts_sholes.map

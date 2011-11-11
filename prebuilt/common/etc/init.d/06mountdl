@@ -13,6 +13,12 @@ else
   NEEDED=105000
 fi
 
+CACHEONLY=$(getprop dalvik.vm.dexopt-cache-only)
+if [ $CACHEONLY -eq 1 ]
+then
+  NEEDED=150000
+fi
+
 if [ $CACHESIZE -lt $NEEDED ]
 then
   mount -o bind /data/local/download /cache/download

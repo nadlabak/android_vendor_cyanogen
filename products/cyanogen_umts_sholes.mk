@@ -36,7 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=SHOLS_U2_05.26.3 PRODUCT_NAME=umts_shol
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := Milestone
-PRODUCT_VERSION_DEVICE_SPECIFIC := .4
+PRODUCT_VERSION_DEVICE_SPECIFIC := .5
 -include vendor/cyanogen/products/common_versions.mk
 
 # PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-umts_sholes.map

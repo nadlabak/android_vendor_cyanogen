@@ -76,7 +76,6 @@ app/YouTube.apk
 etc/permissions/com.google.android.maps.xml
 etc/permissions/features.xml
 framework/com.google.android.maps.jar
-lib/libspeech.so
 lib/libtalk_jni.so
 lib/libvoicesearch.so
 etc/hosts

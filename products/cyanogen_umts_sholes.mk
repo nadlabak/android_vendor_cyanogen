@@ -5,21 +5,7 @@ $(call inherit-product, device/motorola/umts_sholes/umts_sholes.mk)
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 # Include GSM stuff
-#$(call inherit-product, vendor/cyanogen/products/gsm.mk)
-#
-# ^^ commented out, as we need dun type set in internet apns for the 3G Mobile Hotspot
-# to work, so we use our own separate apn list and include the rest of GSM stuff below
-#
-# it will go away once the native wifi tether will work,
-# (if the free time needed for it will be found in the future ;)
-
-# GSM SPN overrides list
-PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
-
-# SIM Toolkit
-PRODUCT_PACKAGES += \
-    Stk
+$(call inherit-product, vendor/cyanogen/products/gsm.mk)
 
 # Include the Flashlight/Torch
 PRODUCT_PACKAGES += Torch

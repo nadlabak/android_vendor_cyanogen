@@ -78,6 +78,10 @@ etc/permissions/features.xml
 framework/com.google.android.maps.jar
 lib/libtalk_jni.so
 lib/libvoicesearch.so
+lib/egl/libEGL_ORG_CF3D.SO
+lib/libGLESv1_CM_ORG_CF3D.so
+lib/libGLESv2_ORG_CF3D.so
+lib/cf3d_uninstall.sh
 etc/hosts
 etc/custom_backup_list.txt
 etc/force_backuptool

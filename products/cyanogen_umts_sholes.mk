@@ -1,8 +1,8 @@
-# Inherit AOSP device configuration for passion.
+# Inherit device configuration.
 $(call inherit-product, device/motorola/umts_sholes/umts_sholes.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
 
 # Include GSM stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)

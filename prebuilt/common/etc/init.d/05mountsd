@@ -53,3 +53,5 @@ then
         log -p e -t mountsd "Unable to repair filesystem, disabling apps2sd";
     fi
 fi
+setprop cm.mountsd.done 1;
+
